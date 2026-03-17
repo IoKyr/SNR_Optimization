@@ -9,12 +9,13 @@ DOI: 10.5281/zenodo.19063904
 
 After downloading and extracting the dataset, the following folders must be placed in the root directory of this repository:
 
+```text
 SNR_Optimization/
-├── subject_1/
-├── processed_data/
-├── SNR_Optimization.ipynb
-└── functions_01/
-
+|-- subject_1/
+|-- processed_data/
+|-- SNR_Optimization.ipynb
+`-- functions_01/
+```
 
 # Folder description
 
