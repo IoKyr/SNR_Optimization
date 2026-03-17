@@ -16,7 +16,7 @@ SNR_Optimization/
 ├── SNR_Optimization.ipynb
 └── functions_01
 
-Folder description
+# Folder description
 
 subject_1/
 Contains the head model used in this study.
