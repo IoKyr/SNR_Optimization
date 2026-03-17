@@ -12,7 +12,8 @@ After downloading and extracting the dataset, the following folders must be plac
 ```text
 SNR_Optimization/
 |-- subject_1/
-|-- processed_data/
+|-- data/
+|    |--  processed_data/
 |-- SNR_Optimization.ipynb
 `-- functions_01/
 ```
