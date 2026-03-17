@@ -1,14 +1,56 @@
 # SNR_Optimization
-This pipeline measures and compares the amplitude based SNR in sensor and source spaces for sensory evoked potentials.
 
-Requirements and expected folder structure are stated in the SNR_Optimization.ipynb. 
+This repository contains a pipeline to measure and compare amplitude-based signal-to-noise ratio (SNR) in both sensor space and source space for sensory evoked potentials.
 
-A dataset accompanies this srcipt. It can be found in Zenodo (DOI: 10.5281/zenodo.19063904). The zipped file contains the "processed_data" folder and the "subject_1" folder. The "subject_1" folder contains the head model that was used in this study and needs to be placed in the root directory like that. The "processed_data" folder contains the eeg, leadfield and current folders for all participants. It also needs to be placed in the root directory. 
+All dependencies and the expected folder structure are described in the notebook: SNR_Optimization.ipynb.
 
-The pre-processed EEG epochs for all participants can be found in the eeg folder of each participant. 
+The dataset accompanying this pipeline is available on Zenodo:
+DOI: 10.5281/zenodo.19063904
 
-The second part of the script produces the necessary figures. If all eeg and current data exist in the folders, there is no need to run the first section of the script. 
+After downloading and extracting the dataset, the following folders must be placed in the root directory of this repository:
 
+SNR_Optimization/
+│
+├── subject_1/
+├── processed_data/
+├── SNR_Optimization.ipynb
+└── functions_01
 
+Folder description
+
+subject_1/
+Contains the head model used in this study.
+
+processed_data/
+Contains all participant data, including:
+
+eeg/ → preprocessed EEG epochs
+
+leadfield/ → forward models
+
+current/ → reconstructed source activity and SNR analysis
+
+Each participant has their data organized within this structure.
+
+# Usage
+
+Ensure the dataset folders are correctly placed in the root directory.
+
+Open and run SNR_Optimization.ipynb.
+
+# Notes
+
+The preprocessed EEG epochs for all participants are located in:
+processed_data/<participant>/eeg/
+The pipeline consists of two main parts:
+1. ERP and Source locaization computation 
+2. SNR analysis (sensor and source space) and figure generation
+
+If the EEG and current data are already available, you can skip the first part and directly run the figure generation section.
+
+# Reproducibility
+
+This repository is designed to work directly with the provided dataset.
+Please ensure the folder structure is preserved exactly as described above.
 
 
